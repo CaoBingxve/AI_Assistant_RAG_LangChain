@@ -1,0 +1,30 @@
+# 项目测试文档
+
+## 项目信息
+
+项目名称：AI Assistant RAG LangChain
+项目版本：1.0.0
+项目描述：基于 LangChain 和 HuggingFace 的 RAG 聊天机器人
+
+## 核心功能
+
+1. 文档问答：基于本地文档内容进行智能问答
+2. 向量存储：使用 FAISS 向量库存储文档嵌入
+3. LangGraph Agent：基于 LangChain 1.2.15 构建智能代理
+4. 多模型支持：DeepSeek + HuggingFace
+
+## 技术栈
+
+- Python 3.11+
+- LangChain 1.2.15
+- LangGraph 0.2.0
+- FAISS
+- DeepSeek
+- HuggingFace
+
+## 运行步骤
+
+1. 安装依赖：uv install
+2. 配置环境变量：在 .env 文件中添加 DEEPSEEK_API_KEY
+3. 运行：python agent_base.py
+4. 输入问题进行问答，输入 q 退出
